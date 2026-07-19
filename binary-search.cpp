@@ -22,6 +22,7 @@ int binarysearch(int arr[], int size, int key){
 int main(){
     int even[6]={2,4,6,8,12,18};
     int odd[5]={3,6,7,4,2};
+    int array[]={2,5,4,23};
     int index=binarysearch(odd, 6, 12);
     std::cout<<"Index is: "<<index<<std::endl;
     return 0;
