@@ -9,5 +9,6 @@ int main(){
    std::cout<<"The array is: "<<std::endl;
    for(int i=0;i<5;i++){
     std::cout<<arr[i]<<" ";
+    
    }
 }
