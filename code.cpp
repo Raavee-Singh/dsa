@@ -1,22 +1,18 @@
 #include<iostream>
-#include<array>
-
 int main(){
-    int arr[5]={};
-    std::cout<<"Enter the elements of array: ";
+    int arr[5]={23,42,12,11,27};//selection sort
     int size=sizeof(arr)/sizeof(int);
-    for(int i=0;i<size;i++){
-        std::cin>>arr[i];
-    }
-    int mini= arr[0];
-    for(int i=0; i<size;i++){
-       mini=std::min(mini,arr[i]);
-    }
-    int index=0;
-    for(int i=0;i<size;i++){
-        if(mini==arr[i]){
-            index=i;
+    for(int i=0;i<size-1;i++){
+        int min_ind=i;
+        for(int j=i+1;j<size;j++){
+            if(arr[j]<arr[min_ind]){
+                min_ind=j;
+            }
         }
+        std::swap(arr[i],arr[min_ind]);
     }
-    std::cout<<"The index of minimum value "<<mini<<" is: "<<index;
+    std::cout<<"Sorted array is: ";
+    for(int i=0;i<size;i++){
+        std::cout<<arr[i]<<" ";
+    }
 }
