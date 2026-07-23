@@ -7,6 +7,12 @@ int main(){
     for(int i:vec){
         std::cout<<i<<" ";
     }
+
+    std::vector<int> last(vec);
+    std::cout<<"Printing last: ";
+    for(int i:last){
+        std::cout<<i<<" ";
+    }
     std::cout<<std::endl;
     std::cout<<"Size: "<<v.capacity()<<std::endl;
     std::cout<<"No. of elements: "<<v.size()<<std::endl;
