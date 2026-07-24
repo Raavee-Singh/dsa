@@ -1,6 +1,9 @@
 #include<iostream>
 #include<vector>
+#include<array>
 int main(){
+    std::vector<int> name;
+    std::array<int,4> arr={1,2,3,4};
     std::vector<int> v;
     std::vector<int> vec(4,2);
     std::cout<<"Printing vec: ";
