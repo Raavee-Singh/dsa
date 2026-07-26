@@ -13,7 +13,7 @@ int main(){
     }
     std::cout<<std::endl;
     std::cout<<"Printing complete!"<<std::endl;
-
+    std::cout<<"printing first and last element: "<<std::endl;
     std::cout<<"First element of array is: "<<arr.front()<<std::endl;
     std::cout<<"Last element of array is: "<<arr.back()<<std::endl;
 
