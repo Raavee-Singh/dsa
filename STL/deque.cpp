@@ -8,6 +8,24 @@ int main(){
     for(int i:d){
         std::cout<<i<<" ";
     }
-    
+    std::cout<<std::endl;
+    d.pop_back();
+    for(int i:d){
+        std::cout<<i<<" ";
+    }
+    std::cout<<std::endl;
+    std::cout<<"First element: "<<d.at(0)<<std::endl;
+    std::cout<<"Front: "<<d.front()<<std::endl;
+    std::cout<<"Empty or not: "<<d.empty()<<std::endl;
+    std::cout<<"before erase: ";
+    for(int i:d){
+        std::cout<<i<<" ";
+    }
+    std::cout<<std::endl;
+    d.erase(d.begin(),d.end());
+    std::cout<<"after erase: ";
+    for(int i:d){
+        std::cout<<i<<" ";
+    }
     return 0;
 }
