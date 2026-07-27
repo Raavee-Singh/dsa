@@ -22,9 +22,11 @@ int main(){
     for(int i:d){
         std::cout<<i<<" ";
     }
+    std::cout<<"Size: "<<d.size();
     std::cout<<std::endl;
     d.erase(d.begin(),d.begin()+1);
     std::cout<<"after erase: ";
+    std::cout<<"Size: "<<d.size()<<std::endl;
     for(int i:d){
         std::cout<<i<<" ";
     }
