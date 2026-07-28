@@ -1,6 +1,7 @@
 #include<iostream>
 #include<array>
 #include<vector>
+#include<deque>
 int main(){
     std::array<int, 5> arr={23,4,2,1,45};
     std::vector<int> vec;
