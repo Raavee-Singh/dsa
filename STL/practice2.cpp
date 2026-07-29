@@ -20,5 +20,6 @@ int main(){
     for(int i:list1){
         std::cout<<i<<" ";
     }
-    std::cout<<std::endl<<"Printing complete!";
+    std::cout<<std::endl<<"Printing complete!"<<std::endl;
+    std::cout<<"List and deque can be edited from both directions!";
 }
