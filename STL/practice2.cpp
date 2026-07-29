@@ -10,5 +10,15 @@ int main(){
     list1.push_front(4);
     list1.push_back(5);
     list1.push_back(6);
-    
+
+    std::cout<<"Printing deque: "<<std::endl;
+    for(int i:deque1){
+        std::cout<<i<<" ";
+    }
+    std::cout<<std::endl;
+    std::cout<<"Printing list: "<<std::endl;
+    for(int i:list1){
+        std::cout<<i<<" ";
+    }
+    std::cout<<std::endl<<"Printing complete!";
 }
